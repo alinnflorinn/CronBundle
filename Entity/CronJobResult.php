@@ -34,7 +34,7 @@ class CronJobResult
     protected $runTime;
     
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nulable=true)
      * @var integer $result
      */
     protected $result;
