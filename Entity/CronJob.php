@@ -50,6 +50,7 @@ class CronJob
     protected $results;
     /**
      * @ORM\OneToOne(targetEntity="CronJobResult")
+     * @ORM\JoinColumn(referencedColumnName="id", onDelete="SET NULL")
      * @var CronJobResult
      */
     protected $mostRecentRun;

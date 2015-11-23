@@ -46,6 +46,7 @@ class CronJobResult
     
     /**
      * @ORM\ManyToOne(targetEntity="CronJob", inversedBy="results")
+     * @ORM\JoinColumn(referencedColumnName="id", onDelete="CASCADE")
      * @var CronJob
      */
     protected $job;
